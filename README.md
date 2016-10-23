@@ -11,4 +11,4 @@ You can see the full article on them [here](http://www.red3d.com/cwr/boids/)
 
 # LICENSE?
 
-[MIT](https://www.github.com/karbik/bmp/LICENSE.txt)
+[MIT](https://github.com/Karbik/BMP/blob/master/LICENSE.txt)
