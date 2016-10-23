@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>BMP - Boid Manipulation Program</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bmp.css">
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="trail-canvas"></div>
+			<div id="boid-canvas"></div>
+			
+			<div id="splash">
+				<div class="splash-contents">
+					<p class="splash-title">
+						BMP
+					</p>
+					<p>
+						<span class="splash-highlight">CLICK</span> and <span class="splash-highlight">HOLD</span>
+					</p>
+				</div>
+			</div>
+
+			
+			<div id="controls"></div>
+			<div id="about-text" style="display:none">
+				<h3>WHAT IS THIS?</h3>	
+				<p>
+					BMP is a toy? experiment? visualizer? based on Craig Reynolds's boids. 
+					He envisioned boids as "creatures" modelled to approximate flocking behaviour by following three simple rules:
+					<ul>
+						<li>Separation - steer to avoid crowding local flockmates</li>
+						<li>Alignment - steer towards the average heading of local flockmates</li>
+						<li>Cohesion - steer to move toward the average position of local flockmates</li>
+					</ul>
+				</p>
+				<p>
+					You can see the full article on them <a href="http://www.red3d.com/cwr/boids/">here</a> 
+				</p>
+				<h3>BUT WHY?</h3>
+				<p>
+					I like pretty things. Ergo, I made pretty thing.
+				</p>
+				<h3>HOW DOES THIS WORK?</h3>
+				<p>
+					Source code is available on <a href="#">GitHub</a> 
+				</p>
+			</div>
+			<div id="about-button" style="display:none" class="controls-button">About BMP</div>
+			
+		</div>
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="lib/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+	<script src="lib/dat.gui/dat.gui.min.js"></script>
+	<script src="lib/sketch/sketch.min.js"></script>
+	<script src="lib/fpsmeter/fpsmeter.min.js"></script>
+
+	<script src="js/ring.js"></script>
+	<script src="js/boid.js"></script>
+	<script src="js/bmp.js"></script>
+	
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script>
+</html>
